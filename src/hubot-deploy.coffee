@@ -1,6 +1,13 @@
-# Deploy Flowdock components
+# Description:
+#   Deploy Flowdock components
 #
-# deploy <component> <stage> <ref>
+# Configuration:
+#   Environment variables: 
+#   HUBOT_GITHUB_TOKEN, required
+#   GITHUB_ORGANIZATION, optional, default: 'flowdock'
+#   
+# Commands:
+#   deploy <component> <stage> <ref>
 #
 
 api = require("octonode").client(process.env.HUBOT_GITHUB_TOKEN or '')
