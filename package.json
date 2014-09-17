@@ -1,0 +1,29 @@
+{
+  "name": "hubot-deploy",
+  "description": "Hubot script for deploying Flowdock components",
+  "version": "1.0.0",
+  "author": "Antti Pitkänen",
+  "license": "MIT",
+  "private": true,
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flowdock/hubot-deploy.git"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "octonode": "~>0.6.5"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "script/test"
+  }
+}
