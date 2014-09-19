@@ -31,6 +31,8 @@ module.exports = (robot) ->
         branch: ref
         deployer:  msg.message.user.name
         environment: stage
+        config:
+          provider: "bundler_capistrano"
         notify: 
           flow: msgMeta.flow
           thread: msgMeta.thread_id || msgMeta.message
