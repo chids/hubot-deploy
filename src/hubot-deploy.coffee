@@ -26,6 +26,7 @@ module.exports = (robot) ->
       ref: ref
       auto_merge: false
       description: "Deploying from hubot"
+      environment: stage
       payload:
         task: 'deploy'
         branch: ref
