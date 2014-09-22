@@ -38,6 +38,7 @@ module.exports = (robot) ->
           flow: msgMeta.flow
           message_thread: msgMeta.thread_id || msgMeta.message
 
+    console.log requestBody
     api.post "repos/#{repo}/deployments", requestBody, (err, status, body, headers) ->
       if err
         console.log "Error from Deployment API", err
