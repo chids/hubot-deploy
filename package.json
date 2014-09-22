@@ -1,7 +1,7 @@
 {
   "name": "hubot-deploy",
   "description": "Hubot script for deploying Flowdock components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Antti Pitkänen",
   "license": "MIT",
   "private": true,
