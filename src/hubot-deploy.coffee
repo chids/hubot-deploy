@@ -35,7 +35,7 @@ module.exports = (robot) ->
           provider: "bundler_capistrano"
         notify: 
           flow: msgMeta.flow
-          thread: msgMeta.thread_id || msgMeta.message
+          message_thread: msgMeta.thread_id || msgMeta.message
 
     api.post "repos/#{repo}/deployments", requestBody, (err, status, body, headers) ->
       if err
