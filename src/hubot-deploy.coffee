@@ -34,7 +34,8 @@ module.exports = (robot) ->
         environment: stage
         config:
           provider: "bundler_capistrano"
-        notify: 
+        notify:
+          user: msg.message.user.name
           flow: msgMeta.flow
           message_thread: msgMeta.thread_id || msgMeta.message
 
