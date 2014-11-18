@@ -15,7 +15,7 @@ api.requestDefaults.headers['Accept'] = 'application/vnd.github.cannonball-previ
 
 module.exports = (robot) ->
   robot.respond /deploy ([^\s]+) ([^\s]+)( [^\s]+)?/i, (msg) ->
-    organization = process.env.GITHUB_ORGANIZATION || 'flowdock'
+    organization = process.env.HUBOT_GITHUB_ORG || 'flowdock'
     component = msg.match[1]
     stage = msg.match[2]
     ref = msg.match[3]?.trim() || 'master'
